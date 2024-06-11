@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập nhiệt độ</title>
+</head>
+<body>
+<input type="number" placeholder="Độ c(Celsius" id="cel">
+<button type="button" onclick="changeF();">Ấn đi</button>
+<script>
+function changeF(){
+    let Cel = document.getElementById("cel").value;
+    let Fah = parseInt(Cel/5*9+32);
+    document.write('<br>');
+    document.write("Nhiệt độ C: " + Cel);
+    document.write('<br>')
+    document.write("Nhiệt độ F: "+Fah)
+}
+</script>
+</body>
+</html>
