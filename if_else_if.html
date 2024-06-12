@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="usname" type="text" placeholder="Tên đăng nhập">
+<br>
+<input id="pass" type="password" placeholder="Nhập mật khẩu">
+<br> <br>
+<button type="button" onclick="signin()">Đăng nhập</button>
+<script>
+    function signin() {
+        let usernamme = document.getElementById("usname").value;
+        let password = document.getElementById("pass").value;
+        if (usernamme == "Admin") {
+            if (password == "TheMaster") {
+                alert("Welcome bé bệu.")
+            } else if (password == null) {
+                alert("Canceled")
+            } else {
+                alert("Wrong password")
+            }
+        } else if (usernamme == null) {
+            alert("Canceld")
+        } else {
+            alert("I don't know you!")
+        }
+
+    }
+</script>
+</body>
+</html>
